@@ -2,61 +2,119 @@
 <html lang="en">
 	<head>
 		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>Lucianoluxx</title>
-		<link rel="stylesheet" type="text/css" href="styles/närconstyles.css">
 		<link rel="stylesheet" type="text/css" href="styles/screen-effect.css">
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Jersey+15&display=swap" rel="stylesheet">
-	</head>
+		<style type="text/css">
+			/*<![CDATA[*/
+			h1{
+				font-size: 60px;
+				text-transform: uppercase;
+				color: #19df80;
+				text-shadow: 0 0 10px #19df80;
+				margin: 0;
+				padding-top:35px;
+				text-align:center;
+				align-content:center;
+			}
+			
+			h2{
+				font-size: 18px;
+				text-transform: uppercase;
+				color: #19df80;
+				text-shadow: 0 0 10px #19df80;
+				margin: 0;
+				padding-top:10px;
+				text-align:center;
+				align-content:center;
+				padding-right:40px;
+				padding-left:40px;
+			}
+			
+			#phone {
+				margin: auto;
+				animation: mymove 5s infinite;
+				width:300px;
+				height:300px;
+				padding-top:40px;
+				padding-bottom:0px;
+			}
 
-	<body onload="move();">
-		<div class='screen oldscreeneffect'>
-			<p style="line-height:40px">&nbsp;</p>
-			<div style="text-align:center">
-				<h1>Lucianoluxx</h1>
-				<h2>Närcon 2024</h2>
-				<a href="desktop.html"></a>
-			</div>
-			<p id="inbet">&nbsp;</p>
-			<div style="text-align:center">
-				<div id="myProgress">
-					<div id="myBar"></div>
-				</div>
-				<br>
-				<p>(C) Lucianoluxx 2024</p>
-				<p id="credit">all rights reserved</p> 
-			</div>
-		</div>
+			@keyframes mymove {
+				50% {transform: rotate(90deg);}
+			}
+			
+			#credit {
+				font-size: 10px;
+				text-transform: uppercase;
+				color: #19df80;
+				text-shadow: 0 0 10px #19df80;
+				margin: 0;
+				padding-top:0px;
+				text-align:center;
+				align-content:center;
+			}
+			
+			a:link { 
+			text-decoration: none; 
+			} 
+			
+			a:visited { 
+			text-decoration: none; 
+			} 
+			
+			a:hover { 
+			text-decoration: none; 
+			} 
+			
+			a:active { 
+			text-decoration: none; 
+			}
+			
+			p{
+				font-size:20px;
+				font-family: jersey15, sans-serif;
+				text-transform: uppercase;
+				color: #19df80;
+				text-shadow: 0 0 5px #19df80;
+				margin:0;
+				padding-top: 10px;
+				text-align:center;
+				align-content:center;
+			}
+			
+			#rights{
+				font-size:15px;
+			}
+			/*]]>*/
+		</style>
+	</head>
 		
-		<script type="text/javascript">
-			//<![CDATA[
-			var i = 0;
-				function move() {
-				if (i == 0) {
-					i = 1;
-					var elem = document.getElementById("myBar");
-					var width = 1;
-					function sleep (time) {
-						return new Promise((resolve) => setTimeout(resolve, time));
-					}
-					sleep(750).then(() => {
-						var id = setInterval(frame, 35);
-						function frame() {
-						if (width >= 100) {
-							clearInterval(id);
-							i = 0;
-							window.location.href = "hidden/transition.html";
-						} else {
-							width++;
-							elem.style.width = width + "%";
-						}
-						}
-					});
-				}
-				}
-			//]]>
+	<body>
+		<script>
+		//<![CDATA[
+			hei = window.screen.height;
+			wi = window.screen.width;
+			
+			function sleep(ms) {
+				return new Promise(resolve => setTimeout(resolve, ms));
+			}
+			if (hei < wi){
+				window.location.replace("terma.html");
+			}else{
+				document.write("<div class='screen oldscreeneffect'>");
+				document.write("<h1>Rotate your device!</h1>");
+				document.write("<h2>For the recommended experience, please rotate your device into landscape mode.</h2>");
+				document.write("<div id='phone'>");
+				document.write("<img src='media/motion_tracker.png' width='260' height='260' alt='A rotating motion tracker.'/>");
+				document.write("</div>");
+				document.write("</div>");
+				sleep(5000).then(() => { window.location.replace("terma.html"); });
+			}
+		//]]>
 		</script>
 	</body>
 </html>
