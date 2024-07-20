@@ -1,0 +1,80 @@
+body{
+	overflow-wrap: break-word;
+}
+
+.jersey-15-regular {
+  font-family: "Jersey 15", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+#myProgress {
+	border: 2px solid green;
+	width: 75%;
+	margin: auto;
+}
+
+#myBar {
+	width: 1%;
+	height: 30px;
+	background-color: #04AA6D;
+}
+
+h1{
+	font-size: 150px;
+	font-family: jersey15, sans-serif;
+	text-transform: uppercase;
+	color: #19df80;
+	text-shadow: 0 0 10px #19df80;
+	margin: 0;
+	padding-bottom: 5px;
+	padding-left:5px;
+	padding-right:5px;
+	text-align:center;
+	align-content:center; 
+}
+
+h2{
+	font-size:30px;
+	font-family: jersey15, sans-serif;
+	text-transform: uppercase;
+	color: #19df80;
+	text-shadow: 0 0 10px #19df80;
+	margin:0;
+}
+
+p{
+	font-size:15px;
+	font-family: jersey15, sans-serif;
+	text-transform: uppercase;
+	color: #19df80;
+	text-shadow: 0 0 5px #19df80;
+	margin:0;
+	padding-top: 10px;
+}
+
+#credit{
+	padding-bottom:20px;
+}
+
+#inbet{
+	line-height:175px;
+}
+
+@media only screen and (max-width: 1000px) and (orientation: landscape) {
+	h1{
+		font-size:100px;
+	}
+}
+
+@media only screen and (max-width: 768px) {
+	h1{
+		font-size:90px;
+		padding-left:3px;
+		padding-right:3px;
+	}
+
+	#inbet{
+		line-height:250px;
+	}
+}

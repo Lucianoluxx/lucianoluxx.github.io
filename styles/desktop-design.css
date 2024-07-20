@@ -1,0 +1,247 @@
+html{
+	font-family: jersey15, sans-serif;
+}
+
+body{
+	overflow-wrap: break-word;
+}
+
+#parent {
+  display: flex;
+}
+
+#card-parent {
+	width: 275px;
+	height: 700px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	margin-left: 5px;
+}
+
+#desc-parent {
+  flex: 1;
+  height: 700px;
+  display:flex;
+  flex-direction:column;
+  margin: 5px;
+  margin-left: 0px;
+}
+
+a:link, a:visited, a:hover, a:active {
+	color: white;
+	text-decoration:none;
+}      
+
+#linesmid{
+	height: 100%;
+	width: 35px;
+	margin-top: 35px;
+}
+
+#firstl, #thirdl{
+	height: 5px;
+	width: 20px;
+	background-color: white;
+}
+
+#firstl{
+	float: right;
+}
+
+#secondl{
+	height:185px;
+	width: 5px;
+	background-color: white;
+	margin: auto;
+	left: 50%;
+	top: 5px;
+}
+
+#thirdl{
+	float: left;
+}
+
+#headert {
+	background-color: #17df7c;
+}
+
+#headert a{
+	text-transform: uppercase;
+	font-size: 25px;
+	font-family: jersey15, sans-serif;
+	color: #093827;
+}
+
+p {
+	font-size: 25px;
+	font-family: jersey15, sans-serif;
+	color: #093827;
+}
+
+#termdiv {
+	height: 25px 100%;
+	margin-left: 1%;
+	margin-right: 1%;
+}
+
+#settingbut {
+	height: 22px;
+	width: 22px;
+	background-color: #0f633f;
+	border: none;
+	align-content: flex-end;
+	align-self: flex-end;
+	margin-right: 0;
+	float: right;
+	margin-top: 3px;
+}
+
+#card1, #card2, #card3, #card4 {
+	margin: 2px auto;
+	height: 120px;
+	padding-top: 6px;
+	padding-left: 6px;
+	margin-bottom: 8px;
+	width: 225px;
+	align-self: center;
+}
+
+#card1{
+	border: 3px white solid;
+	border-left: 20px white solid;
+	border-right: 20px white solid;
+	margin-right: 0px;
+}
+
+.ftit{
+	color: #17df7c;
+	text-transform: uppercase;
+	text-align: left;
+	margin-bottom: 15px;
+	margin-top: 40%;
+	padding-left:12px;
+	font-size: 25px;
+}
+
+.acard{
+	border: solid 3px #17df7c;
+	text-align: left;
+	text-transform: uppercase;
+	color: white;
+	font-size: 25px;
+}
+
+#pagehd, #pagehdund{
+	margin: 2px;
+	margin-bottom: 7px;
+	margin-left: 0px;
+	width: 85%;
+}
+
+#pagehd{
+	border: solid 3px #FFFFFF;
+	background: #0f633f;
+	margin-top: 2%;
+}
+
+#pagehdund{
+	border: solid 3px #18461f;
+	height: 50px;
+}
+
+#desc {
+	margin: 2px;
+	flex: 1;
+	border: solid 3px #17df7c;
+	border-top-width: 22px;
+	overflow: scroll;
+}
+
+.desctext {
+	font-size: 20px;
+	color: white;
+	padding: 10px;
+	margin: 0 auto;
+	text-align: left;
+}
+
+.captions {
+	text-transform: uppercase;
+}
+
+.pagetitles{
+	color: white;
+	text-transform: uppercase;
+	font-size: 35px;
+	float: left;
+	padding-left: 10px;
+	margin: 5px auto;
+}
+
+h1{
+	text-transform: uppercase;
+	color: #17df7c;
+	font-size: 60px;
+	margin-bottom: 20px;
+	margin-top: 20px;
+}
+
+h2{
+	color:#17df7c;
+	margin-bottom: 10px;
+	margin-top: 0px;
+	font-size:21px;
+}
+
+@media only screen and (max-width: 600px) {
+
+	#card-parent {
+		height: 100%;
+		margin-left: 10px;
+		width:100px;
+	}
+
+	.ftit{
+		font-size: 21px;
+		padding-left:2px;
+	}
+
+	#linesmid{
+		width: 30px;
+		opacity:0;
+	}
+	
+	#firstl, #thirdl{
+		width: 10px;
+	}
+	
+	#secondl{
+		height:145px;
+	}
+
+	#card1, #card2, #card3, #card4 {
+		height: 130px;
+		padding-right:0px;
+		margin-right:0px;
+		width: 75px;
+	}
+	
+	#card1{
+		border-left: 18px white solid;
+		border-right: 18px white solid;
+	}
+
+	.acard{
+		font-size: 21px;
+	}
+
+	#pagehd, #pagehdund{
+		overflow: clip;
+		width: 95%;
+	}
+
+	.pagetitles{
+		padding-left: 10px;
+		font-size: 30px;
+	}
+}

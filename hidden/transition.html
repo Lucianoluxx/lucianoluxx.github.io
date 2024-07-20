@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Lucianoluxx</title>
+		<link rel="stylesheet" type="text/css" href="/styles/screen-effect.css">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Jersey+15&display=swap" rel="stylesheet">
+		<style type="text/css">
+			/*<![CDATA[*/
+				body { 
+					background-image: url("/media/screen1.png");
+					background-size: cover;
+					background-attachment: fixed;
+					background-repeat: no-repeat;
+				}
+				.oldscreeneffect {
+					opacity: 0.5;
+					position: absolute;
+				}
+				
+				.screen {
+					opacity: 0.9;
+				}
+			/*]]>*/
+		</style>
+	</head>
+	<body onload="move();">
+		<div class='screen oldscreeneffect'>
+		</div>
+		<script type="text/javascript">
+		//<![CDATA[
+			function move() {
+				function sleep (time) {
+					return new Promise((resolve) => setTimeout(resolve, time));
+				}
+				sleep(100).then(() => {
+						window.location.href = "transition2.html";
+					  }
+				);
+			  }
+		//]]>
+		</script>
+	</body>
+</html>

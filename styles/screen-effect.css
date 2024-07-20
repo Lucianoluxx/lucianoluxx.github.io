@@ -1,0 +1,25 @@
+body{
+	background-color:#0d3c0e;
+	font-family: jersey15, sans-serif;
+}
+
+.oldscreeneffect {
+	background: radial-gradient(ellipse at center, #000E00 20%, #003d02 100%);
+	background-size: 100% 4px;
+	background-repeat: repeat-y;
+	opacity: 0.9;
+	position: sticky;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+  }
+  
+.screen {
+	margin: 1px 1px 1px 1px;
+	border: 0px solid;
+	border-radius: 20px;
+	box-shadow: inset 0px 0px 10px 10px #000E00;
+	text-shadow: 0px 0px 7px #19df80;
+	opacity: 0.8;
+}
