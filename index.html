@@ -7,12 +7,56 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <style type="text/css">
+        body {
+        background-color: #ffebcc;
+        font-family: Verdana, sans-serif;
+        }
+    
       .banner{
         background-image:url("https://i.imgur.com/AJkPLZO.png");
         background-repeat:no-repeat;
         background-size:cover;
+        font-size: 20px;
+        text-transform: uppercase;
+        border-top-left-radius:5px;
+        border-top-right-radius:5px;
       }
-    </style>
+      
+      .navbar{
+        overflow: hidden;
+        background-color: #cca27f;
+        border-bottom-right-radius:5px;
+        border-bottom-left-radius:5px;
+      }
+
+      .navbar a{
+        float: left;
+        font-size:15px;
+        text-align: center;
+        padding: 10px 15px;
+        color: #ffebcc;
+        text-decoration: none;
+        text-transform: uppercase;
+      }
+      
+      .foot{
+        position: fixed;
+        bottom: 0;
+        text-align: center;
+        width: 100%;
+        background-color: #fff5e6;
+        color: #ba8051;
+        font-size:10px;
+      }
+      
+      .footlist a{
+        text-align: center;
+        padding: 15px 10px;
+        color: #ba8051;
+        text-decoration: none;
+        font-size: 15px;
+      }
+   </style>
   </head>
 
   <body>
@@ -20,5 +64,25 @@
       <h1>The O(r)nion archives</h1>
       <img src="https://i.imgur.com/BwdfshV.png" style="width:50%;" alt="onionskye">
     </div>
+    
+    <div class="navbar">
+        <a href="ya">Home</a>
+        <a href="ye">All</a>
+        <a href="yo">Tarantulas</a>
+    </div>
+    
+    <div class="welcome">
+        <h2>Welcome to Orion's blog!</h2>
+        <p>I share information and ramble about stuff I am passionate about and stuff that pisses me off.</p>
+    </div>
+    
+    <div class="foot">
+        <div class="footlist">
+            <a href="l">Contacts</a>
+            <a href="uh">Disclaimer</a>
+        </div>
+        <p>Lucianoluxx 2025</p>
+    </div>
   </body>
 </html>
+
